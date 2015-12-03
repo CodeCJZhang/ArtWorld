@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="AW_MyPreferenceCell">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="120"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o7T-ed-Gih">
+                        <rect key="frame" x="0.0" y="73" width="100" height="47"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zbg-HK-YBa">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="73"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="73" id="FAf-zz-MQe"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AEU-73-07t">
+                        <rect key="frame" x="38" y="31" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="gXu-i0-HpU"/>
+                            <constraint firstAttribute="height" constant="25" id="wHM-qC-yUE"/>
+                        </constraints>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <state key="normal" backgroundImage="注册--兴趣选择-选择">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="o7T-ed-Gih" firstAttribute="top" secondItem="zbg-HK-YBa" secondAttribute="bottom" id="7te-uA-v5z"/>
+                <constraint firstItem="zbg-HK-YBa" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="EC7-dF-1Of"/>
+                <constraint firstAttribute="trailing" secondItem="zbg-HK-YBa" secondAttribute="trailing" id="FBo-Kp-XEF"/>
+                <constraint firstAttribute="trailing" secondItem="o7T-ed-Gih" secondAttribute="trailing" id="KR1-k0-cke"/>
+                <constraint firstAttribute="bottom" secondItem="o7T-ed-Gih" secondAttribute="bottom" id="Tdw-Vt-XZV"/>
+                <constraint firstItem="o7T-ed-Gih" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="VNe-Vh-sJ7"/>
+                <constraint firstAttribute="centerY" secondItem="AEU-73-07t" secondAttribute="centerY" constant="16.5" id="VZa-cU-pM8"/>
+                <constraint firstAttribute="centerX" secondItem="AEU-73-07t" secondAttribute="centerX" id="ZTw-eR-llL"/>
+                <constraint firstItem="zbg-HK-YBa" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="qX0-hf-ur6"/>
+            </constraints>
+            <size key="customSize" width="125" height="175"/>
+            <connections>
+                <outlet property="bigLabel" destination="zbg-HK-YBa" id="xVg-1q-sy3"/>
+                <outlet property="preferenceLabel" destination="o7T-ed-Gih" id="iEm-B3-ce1"/>
+                <outlet property="selectBtn" destination="AEU-73-07t" id="uBI-Pg-CZV"/>
+            </connections>
+            <point key="canvasLocation" x="136" y="169"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="注册--兴趣选择-选择" width="25" height="25"/>
+    </resources>
+</document>

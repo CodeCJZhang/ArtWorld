@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AW_SetDateView">
+            <rect key="frame" x="0.0" y="0.0" width="280" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5zO-u2-eSK">
+                    <rect key="frame" x="0.0" y="260" width="280" height="40"/>
+                    <subviews>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZh-BW-3hG">
+                            <rect key="frame" x="140" y="0.0" width="140" height="40"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="取消">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="buttonClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="N6n-8y-a8a"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dxQ-4W-BKd">
+                            <rect key="frame" x="0.0" y="0.0" width="140" height="40"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="确定">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="buttonClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="bXz-r9-u2s"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="2WU-aQ-2KO"/>
+                        <constraint firstItem="dxQ-4W-BKd" firstAttribute="leading" secondItem="5zO-u2-eSK" secondAttribute="leading" id="3BM-mM-LdQ"/>
+                        <constraint firstItem="fZh-BW-3hG" firstAttribute="top" secondItem="5zO-u2-eSK" secondAttribute="top" id="BSj-0i-9EG"/>
+                        <constraint firstAttribute="bottom" secondItem="fZh-BW-3hG" secondAttribute="bottom" id="F9r-Z4-xAv"/>
+                        <constraint firstAttribute="bottom" secondItem="dxQ-4W-BKd" secondAttribute="bottom" id="T84-5W-86d"/>
+                        <constraint firstAttribute="trailing" secondItem="fZh-BW-3hG" secondAttribute="trailing" id="TfU-Tp-W39"/>
+                        <constraint firstItem="dxQ-4W-BKd" firstAttribute="width" secondItem="fZh-BW-3hG" secondAttribute="width" id="XZK-Rj-k4P"/>
+                        <constraint firstItem="fZh-BW-3hG" firstAttribute="leading" secondItem="dxQ-4W-BKd" secondAttribute="trailing" id="ZF8-xP-ctk"/>
+                        <constraint firstItem="dxQ-4W-BKd" firstAttribute="top" secondItem="5zO-u2-eSK" secondAttribute="top" id="w8e-bK-aWc"/>
+                    </constraints>
+                </view>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="EvD-lR-3q5">
+                    <rect key="frame" x="0.0" y="60" width="280" height="200"/>
+                    <date key="date" timeIntervalSinceReferenceDate="464937388.18956602">
+                        <!--2015-09-26 05:16:28 +0000-->
+                    </date>
+                    <connections>
+                        <action selector="dateVallueChanged:" destination="iN0-l3-epB" eventType="valueChanged" id="aQj-Fc-GKB"/>
+                    </connections>
+                </datePicker>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uRu-01-Zwn">
+                    <rect key="frame" x="0.0" y="0.0" width="280" height="60"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="设置日期" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rec-vB-kSi">
+                            <rect key="frame" x="8" y="19" width="68" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="gpP-pJ-lAr"/>
+                                <constraint firstAttribute="width" constant="68" id="jcG-Uc-A5N"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Rec-vB-kSi" firstAttribute="leading" secondItem="uRu-01-Zwn" secondAttribute="leading" constant="8" id="ki3-Nz-ady"/>
+                        <constraint firstAttribute="height" constant="60" id="sUV-IE-DVi"/>
+                        <constraint firstAttribute="centerY" secondItem="Rec-vB-kSi" secondAttribute="centerY" constant="0.5" id="wGm-we-6Qx"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="EvD-lR-3q5" firstAttribute="top" secondItem="uRu-01-Zwn" secondAttribute="bottom" id="AX3-yG-XeE"/>
+                <constraint firstItem="EvD-lR-3q5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="HaI-Vy-UxO"/>
+                <constraint firstAttribute="bottom" secondItem="5zO-u2-eSK" secondAttribute="bottom" id="a6l-hU-iCZ"/>
+                <constraint firstItem="uRu-01-Zwn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="baA-ua-P8Y"/>
+                <constraint firstAttribute="trailing" secondItem="EvD-lR-3q5" secondAttribute="trailing" id="dYB-gn-cgl"/>
+                <constraint firstAttribute="trailing" secondItem="uRu-01-Zwn" secondAttribute="trailing" id="jQv-U6-lPU"/>
+                <constraint firstItem="uRu-01-Zwn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="jpN-92-28Y"/>
+                <constraint firstItem="5zO-u2-eSK" firstAttribute="top" secondItem="EvD-lR-3q5" secondAttribute="bottom" id="kC9-u9-hn0"/>
+                <constraint firstAttribute="trailing" secondItem="5zO-u2-eSK" secondAttribute="trailing" id="la5-in-eJS"/>
+                <constraint firstItem="5zO-u2-eSK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="mC0-ZJ-3rE"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bottomView" destination="5zO-u2-eSK" id="E2P-8J-uNq"/>
+                <outlet property="cancleBtn" destination="fZh-BW-3hG" id="Enj-qo-qdA"/>
+                <outlet property="confirmBtn" destination="dxQ-4W-BKd" id="Wgo-vb-3YC"/>
+                <outlet property="datePicker" destination="EvD-lR-3q5" id="b6B-cD-t7v"/>
+                <outlet property="topView" destination="uRu-01-Zwn" id="b4P-HE-x0B"/>
+            </connections>
+            <point key="canvasLocation" x="38" y="146"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AW_FairHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="459" height="289"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ivb-hB-P34" customClass="iCarousel">
+                    <rect key="frame" x="0.0" y="0.0" width="459" height="150"/>
+                    <subviews>
+                        <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="XU6-OJ-xew">
+                            <rect key="frame" x="210" y="118" width="39" height="37"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="37" id="bTE-Xl-kdb"/>
+                                <constraint firstAttribute="width" constant="39" id="zOo-Hj-444"/>
+                            </constraints>
+                        </pageControl>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="T3e-Do-bdd"/>
+                        <constraint firstAttribute="centerX" secondItem="XU6-OJ-xew" secondAttribute="centerX" id="ZhO-wA-CIc"/>
+                        <constraint firstAttribute="bottom" secondItem="XU6-OJ-xew" secondAttribute="bottom" constant="-5" id="hoC-yc-CdR"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="猜你喜欢" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0tJ-fv-Zr1">
+                    <rect key="frame" x="8" y="268" width="443" height="14"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E5W-Ke-D49">
+                    <rect key="frame" x="0.0" y="150" width="459" height="112"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="3FS-Oy-dl1">
+                            <rect key="frame" x="0.0" y="30" width="459" height="80"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="iUF-2M-eb0">
+                                <size key="itemSize" width="50" height="50"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="热门分类" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jIh-Nk-eun">
+                            <rect key="frame" x="8" y="5" width="443" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="fdY-yf-5CW"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="3FS-Oy-dl1" firstAttribute="leading" secondItem="E5W-Ke-D49" secondAttribute="leading" id="0cd-nM-uUh"/>
+                        <constraint firstItem="jIh-Nk-eun" firstAttribute="leading" secondItem="E5W-Ke-D49" secondAttribute="leading" constant="8" id="A3u-Er-VHe"/>
+                        <constraint firstItem="3FS-Oy-dl1" firstAttribute="top" secondItem="jIh-Nk-eun" secondAttribute="bottom" constant="4" id="LEb-GR-t55"/>
+                        <constraint firstAttribute="height" constant="112" id="Rsh-eR-QNs"/>
+                        <constraint firstAttribute="trailing" secondItem="3FS-Oy-dl1" secondAttribute="trailing" id="WqW-on-FlC"/>
+                        <constraint firstAttribute="bottom" secondItem="3FS-Oy-dl1" secondAttribute="bottom" constant="2" id="haE-RB-Uun"/>
+                        <constraint firstItem="jIh-Nk-eun" firstAttribute="top" secondItem="E5W-Ke-D49" secondAttribute="top" constant="5" id="jiH-ba-DZw"/>
+                        <constraint firstAttribute="trailing" secondItem="jIh-Nk-eun" secondAttribute="trailing" constant="8" id="tC7-UC-khO"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="0tJ-fv-Zr1" firstAttribute="top" secondItem="E5W-Ke-D49" secondAttribute="bottom" constant="6" id="0gv-mW-Eza"/>
+                <constraint firstItem="E5W-Ke-D49" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="9hN-qA-byr"/>
+                <constraint firstItem="0tJ-fv-Zr1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="ARF-oC-T6a"/>
+                <constraint firstAttribute="bottom" secondItem="0tJ-fv-Zr1" secondAttribute="bottom" constant="7" id="Aij-WX-H3f"/>
+                <constraint firstItem="ivb-hB-P34" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="BtJ-13-Q9h"/>
+                <constraint firstAttribute="trailing" secondItem="E5W-Ke-D49" secondAttribute="trailing" id="cN9-bk-LYH"/>
+                <constraint firstItem="E5W-Ke-D49" firstAttribute="top" secondItem="ivb-hB-P34" secondAttribute="bottom" id="cot-f7-sRN"/>
+                <constraint firstItem="ivb-hB-P34" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="jxe-4d-lMm"/>
+                <constraint firstAttribute="trailing" secondItem="0tJ-fv-Zr1" secondAttribute="trailing" constant="8" id="tIF-o8-epf"/>
+                <constraint firstAttribute="trailing" secondItem="ivb-hB-P34" secondAttribute="trailing" id="udm-Ob-ykE"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="adPageControl" destination="XU6-OJ-xew" id="hGx-z6-cbI"/>
+                <outlet property="adView" destination="ivb-hB-P34" id="oI5-WA-JAI"/>
+                <outlet property="kindCollectionView" destination="3FS-Oy-dl1" id="MfN-9y-8kA"/>
+            </connections>
+            <point key="canvasLocation" x="256.5" y="114.5"/>
+        </view>
+    </objects>
+</document>

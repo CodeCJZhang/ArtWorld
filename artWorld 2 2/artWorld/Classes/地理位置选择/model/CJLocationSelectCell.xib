@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="location" id="054-Mj-r8q" customClass="CJLocationSelectCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="054-Mj-r8q" id="Gaz-QH-hJp">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="不显示位置" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pqv-Am-cdf">
+                        <rect key="frame" x="8" y="11" width="276" height="21"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Rs9-A6-go6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="写微博--城市选择" translatesAutoresizingMaskIntoConstraints="NO" id="IWP-ci-1k8">
+                        <rect key="frame" x="292" y="15" width="20" height="14"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="BOI-aY-WfC"/>
+                            <constraint firstAttribute="width" constant="20" id="CTG-2E-hYu"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="pqv-Am-cdf" firstAttribute="centerY" secondItem="Gaz-QH-hJp" secondAttribute="centerY" id="7fr-lF-Zl0"/>
+                    <constraint firstItem="pqv-Am-cdf" firstAttribute="leading" secondItem="Gaz-QH-hJp" secondAttribute="leading" constant="8" id="ERa-8d-jqV"/>
+                    <constraint firstItem="IWP-ci-1k8" firstAttribute="leading" secondItem="pqv-Am-cdf" secondAttribute="trailing" constant="8" id="Jgu-ey-MMc"/>
+                    <constraint firstItem="IWP-ci-1k8" firstAttribute="centerY" secondItem="Gaz-QH-hJp" secondAttribute="centerY" id="YNu-o6-fyU"/>
+                    <constraint firstAttribute="trailing" secondItem="IWP-ci-1k8" secondAttribute="trailing" constant="8" id="heK-aH-Hvu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="selectImage" destination="IWP-ci-1k8" id="rcQ-rb-YRc"/>
+            </connections>
+            <point key="canvasLocation" x="289" y="167"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="location" id="KGk-i7-Jjw" customClass="CJLocationSelectCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="河北省石家庄市" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OuG-Eg-2JB">
+                        <rect key="frame" x="8" y="0.0" width="276" height="21"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="erV-QR-hXs"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前区域" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g5I-2R-K2i">
+                        <rect key="frame" x="8" y="22" width="276" height="21"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="bHW-Ee-FHh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="写微博--城市选择" translatesAutoresizingMaskIntoConstraints="NO" id="Icy-Nw-N7f">
+                        <rect key="frame" x="292" y="15" width="20" height="14"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="LfW-a8-d9y"/>
+                            <constraint firstAttribute="width" constant="20" id="aTg-zA-MqA"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Icy-Nw-N7f" secondAttribute="trailing" constant="8" id="1b6-VG-GFv"/>
+                    <constraint firstItem="g5I-2R-K2i" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="68J-Cy-r5R"/>
+                    <constraint firstItem="OuG-Eg-2JB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Kxn-KB-eV7"/>
+                    <constraint firstItem="Icy-Nw-N7f" firstAttribute="leading" secondItem="OuG-Eg-2JB" secondAttribute="trailing" constant="8" id="OyT-AW-ED9"/>
+                    <constraint firstItem="OuG-Eg-2JB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="TCJ-jJ-DPa"/>
+                    <constraint firstItem="Icy-Nw-N7f" firstAttribute="leading" secondItem="g5I-2R-K2i" secondAttribute="trailing" constant="8" id="VEr-p7-ERb"/>
+                    <constraint firstItem="g5I-2R-K2i" firstAttribute="top" secondItem="OuG-Eg-2JB" secondAttribute="bottom" constant="1" id="gA1-fA-kAi"/>
+                    <constraint firstAttribute="centerY" secondItem="Icy-Nw-N7f" secondAttribute="centerY" id="ksO-Q1-pCt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="area" destination="g5I-2R-K2i" id="Miu-Lv-0i4"/>
+                <outlet property="place" destination="OuG-Eg-2JB" id="UP2-5g-MKL"/>
+                <outlet property="selectImage" destination="Icy-Nw-N7f" id="Gh6-fT-qum"/>
+            </connections>
+            <point key="canvasLocation" x="289" y="285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="写微博--城市选择" width="40" height="28"/>
+    </resources>
+</document>

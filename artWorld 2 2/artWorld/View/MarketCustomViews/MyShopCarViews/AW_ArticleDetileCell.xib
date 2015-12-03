@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="AW_ArticleDetileCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="产地" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MHb-Gv-LKt">
+                        <rect key="frame" x="8" y="11" width="32" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="32" id="A2I-Ew-8pZ"/>
+                            <constraint firstAttribute="height" constant="21" id="MeO-iq-rqV"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="centerY" secondItem="MHb-Gv-LKt" secondAttribute="centerY" constant="0.25" id="F8T-AJ-XcQ"/>
+                    <constraint firstItem="MHb-Gv-LKt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="mGo-tS-Rif"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="leftString" destination="MHb-Gv-LKt" id="tFR-WO-yft"/>
+            </connections>
+            <point key="canvasLocation" x="319" y="260"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Sld-zE-yk7" customClass="AW_ArticleDetileCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Sld-zE-yk7" id="rMw-c0-1uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="产品详情" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CTM-Fb-362">
+                        <rect key="frame" x="8" y="11" width="60" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="32" id="JMI-8P-Vjn"/>
+                            <constraint firstAttribute="height" constant="21" id="xDi-Vo-4Ob"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m4C-fY-5Vo">
+                        <rect key="frame" x="300" y="18" width="12" height="7"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="12" id="q7C-gf-q2j"/>
+                            <constraint firstAttribute="height" constant="7" id="vW7-z9-Ens"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="向下">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="centerY" secondItem="m4C-fY-5Vo" secondAttribute="centerY" constant="0.25" id="CGi-dT-RlJ"/>
+                    <constraint firstItem="CTM-Fb-362" firstAttribute="leading" secondItem="rMw-c0-1uM" secondAttribute="leading" constant="8" id="JWl-6G-fOu"/>
+                    <constraint firstAttribute="trailing" secondItem="m4C-fY-5Vo" secondAttribute="trailing" constant="8" id="O6F-OI-dKW"/>
+                    <constraint firstAttribute="centerY" secondItem="CTM-Fb-362" secondAttribute="centerY" constant="0.25" id="mYS-KP-G1n"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="153" y="353"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="向下" width="24" height="14"/>
+    </resources>
+</document>

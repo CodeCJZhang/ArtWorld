@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="AW_AnonymityCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="匿名购买" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kmC-Q1-blt">
+                        <rect key="frame" x="8" y="11" width="61" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="hAH-dS-g0L"/>
+                            <constraint firstAttribute="width" constant="61" id="xSM-KC-K0b"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jSO-ee-RZy">
+                        <rect key="frame" x="284" y="12" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="0WA-hm-6cn"/>
+                            <constraint firstAttribute="width" constant="20" id="m3i-A3-HUm"/>
+                        </constraints>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <state key="normal" backgroundImage="回复评论--选中">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="AnonymityBtnClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="hHh-oI-stk"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="centerY" secondItem="kmC-Q1-blt" secondAttribute="centerY" constant="0.25" id="IWV-To-qmk"/>
+                    <constraint firstItem="kmC-Q1-blt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="VGB-rh-or1"/>
+                    <constraint firstAttribute="trailing" secondItem="jSO-ee-RZy" secondAttribute="trailing" constant="16" id="fo8-Fo-h66"/>
+                    <constraint firstAttribute="centerY" secondItem="jSO-ee-RZy" secondAttribute="centerY" constant="-0.25" id="pEa-cf-2B3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="AnonymityBtn" destination="jSO-ee-RZy" id="PvR-jg-tbW"/>
+            </connections>
+            <point key="canvasLocation" x="165" y="281"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="回复评论--选中" width="40" height="40"/>
+    </resources>
+</document>

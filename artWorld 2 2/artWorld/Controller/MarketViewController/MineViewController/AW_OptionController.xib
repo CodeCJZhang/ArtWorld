@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AW_OptionController">
+            <connections>
+                <outlet property="bottomButton" destination="03U-xH-zAy" id="9qG-oF-8uw"/>
+                <outlet property="connectPhone" destination="qhi-gB-ibG" id="s7O-XE-h9T"/>
+                <outlet property="textBackground" destination="EEA-ua-Ti5" id="wqx-bx-X2w"/>
+                <outlet property="textView" destination="SjE-eH-Ppj" id="FRk-ZM-xBe"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="欢迎提建议或需求，我们的进步离不开您的反馈～" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsW-Z3-2SH">
+                    <rect key="frame" x="10" y="10" width="300" height="21"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="p3v-1y-Q7h"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" background="纯白色" translatesAutoresizingMaskIntoConstraints="NO" id="EEA-ua-Ti5">
+                    <rect key="frame" x="10" y="39" width="300" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="wqp-PH-gA7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="03U-xH-zAy">
+                    <rect key="frame" x="14" y="329" width="292" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="3ch-Nj-62v"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="提交反馈给产品经理">
+                        <color key="titleColor" red="0.48143829560000001" green="0.718454072" blue="0.2444225193" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="ideaResponse:" destination="-1" eventType="touchUpInside" id="0Db-TI-OuC"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="联系方式QQ或手机" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qhi-gB-ibG">
+                    <rect key="frame" x="15" y="39" width="295" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SjE-eH-Ppj" customClass="BRPlaceholderTextView">
+                    <rect key="frame" x="10" y="87" width="300" height="212"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="212" id="ePS-l2-bR8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="EEA-ua-Ti5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="4Pu-eF-WWE"/>
+                <constraint firstItem="03U-xH-zAy" firstAttribute="top" secondItem="SjE-eH-Ppj" secondAttribute="bottom" constant="30" id="6hl-90-UTC"/>
+                <constraint firstItem="qhi-gB-ibG" firstAttribute="top" secondItem="EEA-ua-Ti5" secondAttribute="top" id="B79-Iu-zhM"/>
+                <constraint firstAttribute="trailing" secondItem="SjE-eH-Ppj" secondAttribute="trailing" constant="10" id="Fcm-xp-tMC"/>
+                <constraint firstItem="SjE-eH-Ppj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="JVu-YH-fSo"/>
+                <constraint firstItem="EEA-ua-Ti5" firstAttribute="top" secondItem="rsW-Z3-2SH" secondAttribute="bottom" constant="8" id="LMd-u3-mvf"/>
+                <constraint firstAttribute="trailing" secondItem="EEA-ua-Ti5" secondAttribute="trailing" constant="10" id="LnV-3N-gXW"/>
+                <constraint firstItem="SjE-eH-Ppj" firstAttribute="top" secondItem="qhi-gB-ibG" secondAttribute="bottom" constant="8" id="Ssj-jf-gXF"/>
+                <constraint firstItem="rsW-Z3-2SH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="TAY-s9-y1v"/>
+                <constraint firstItem="qhi-gB-ibG" firstAttribute="leading" secondItem="EEA-ua-Ti5" secondAttribute="leading" constant="5" id="Vsy-L7-44U"/>
+                <constraint firstItem="rsW-Z3-2SH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="Xnf-ZA-k4t"/>
+                <constraint firstItem="qhi-gB-ibG" firstAttribute="trailing" secondItem="EEA-ua-Ti5" secondAttribute="trailing" id="d5X-sD-CJ0"/>
+                <constraint firstItem="qhi-gB-ibG" firstAttribute="bottom" secondItem="EEA-ua-Ti5" secondAttribute="bottom" id="gu4-qs-8p0"/>
+                <constraint firstAttribute="trailing" secondItem="03U-xH-zAy" secondAttribute="trailing" constant="14" id="k9b-Pd-rXr"/>
+                <constraint firstItem="03U-xH-zAy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="14" id="o4h-lE-XiD"/>
+                <constraint firstAttribute="trailing" secondItem="rsW-Z3-2SH" secondAttribute="trailing" constant="10" id="vzH-9P-pSl"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="233" y="231"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="纯白色" width="10" height="10"/>
+    </resources>
+</document>

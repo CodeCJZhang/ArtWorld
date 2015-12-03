@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="AW_CheckDetailCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="42"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="41.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="查看商品详情" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ToW-Kl-AMO">
+                        <rect key="frame" x="8" y="10" width="102" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="WDS-M9-5pe"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="102" id="ste-sY-eZh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SHQ-eG-hfM">
+                        <rect key="frame" x="300" y="17" width="12" height="7"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="7" id="4Qw-dq-Hao"/>
+                            <constraint firstAttribute="width" constant="12" id="mIL-X7-le9"/>
+                        </constraints>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xpq-ZY-Dkl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="42"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <state key="normal" title="Button"/>
+                        <connections>
+                            <action selector="disPlayDetailBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="L9a-ef-gUp"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="SHQ-eG-hfM" secondAttribute="trailing" constant="8" id="FDA-l0-gy6"/>
+                    <constraint firstItem="Xpq-ZY-Dkl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="GLj-Zl-FfQ"/>
+                    <constraint firstItem="SHQ-eG-hfM" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="GNk-bY-Vkf"/>
+                    <constraint firstAttribute="trailing" secondItem="Xpq-ZY-Dkl" secondAttribute="trailing" id="OaS-v1-4xV"/>
+                    <constraint firstItem="ToW-Kl-AMO" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="VP1-WS-pwC"/>
+                    <constraint firstAttribute="bottom" secondItem="Xpq-ZY-Dkl" secondAttribute="bottom" id="hZx-oq-XiD"/>
+                    <constraint firstItem="Xpq-ZY-Dkl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="i3L-F6-sMr"/>
+                    <constraint firstItem="ToW-Kl-AMO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="ny8-wV-PGx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="expendImage" destination="SHQ-eG-hfM" id="Soq-ht-TpO"/>
+            </connections>
+            <point key="canvasLocation" x="276" y="205"/>
+        </tableViewCell>
+    </objects>
+</document>

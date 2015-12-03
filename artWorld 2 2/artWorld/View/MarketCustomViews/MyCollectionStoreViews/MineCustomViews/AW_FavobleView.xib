@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="rui-ZK-tbX" customClass="AW_FavobleView">
+            <rect key="frame" x="0.0" y="0.0" width="280" height="162"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q6k-RT-pPE">
+                    <rect key="frame" x="0.0" y="0.0" width="280" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请输入店家优惠码" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sfl-Sf-PFG">
+                            <rect key="frame" x="8" y="9" width="264" height="21"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="UJA-Hs-fIx"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="centerY" secondItem="Sfl-Sf-PFG" secondAttribute="centerY" constant="0.5" id="DB8-YB-oex"/>
+                        <constraint firstItem="Sfl-Sf-PFG" firstAttribute="leading" secondItem="Q6k-RT-pPE" secondAttribute="leading" constant="8" id="XAH-su-dQA"/>
+                        <constraint firstAttribute="height" constant="40" id="mcJ-aw-BSn"/>
+                        <constraint firstAttribute="trailing" secondItem="Sfl-Sf-PFG" secondAttribute="trailing" constant="8" id="zMO-gW-1je"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fIp-gr-6C5">
+                    <rect key="frame" x="0.0" y="40" width="280" height="64"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2cl-at-YiM">
+                            <rect key="frame" x="8" y="8" width="264" height="45"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="2cl-at-YiM" secondAttribute="bottom" constant="11" id="764-5f-5dN"/>
+                        <constraint firstAttribute="trailing" secondItem="2cl-at-YiM" secondAttribute="trailing" constant="8" id="B7J-fk-2O7"/>
+                        <constraint firstItem="2cl-at-YiM" firstAttribute="leading" secondItem="fIp-gr-6C5" secondAttribute="leading" constant="8" id="Jl4-yJ-OiW"/>
+                        <constraint firstAttribute="height" constant="64" id="lXS-BI-m33"/>
+                        <constraint firstItem="2cl-at-YiM" firstAttribute="top" secondItem="fIp-gr-6C5" secondAttribute="top" constant="8" id="zQS-xl-Hc0"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZz-Mb-P2o">
+                    <rect key="frame" x="8" y="104" width="264" height="45"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="AKh-3y-IQF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="确定">
+                        <color key="titleColor" red="0.48143829560000001" green="0.718454072" blue="0.2444225193" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="confirmBtnClicked:" destination="rui-ZK-tbX" eventType="touchUpInside" id="mBu-uo-Vkq"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Q6k-RT-pPE" secondAttribute="trailing" id="17p-VI-1ke"/>
+                <constraint firstItem="JZz-Mb-P2o" firstAttribute="leading" secondItem="rui-ZK-tbX" secondAttribute="leading" constant="8" id="4X4-YE-NJJ"/>
+                <constraint firstItem="Q6k-RT-pPE" firstAttribute="leading" secondItem="rui-ZK-tbX" secondAttribute="leading" id="9S0-kZ-Y8X"/>
+                <constraint firstAttribute="trailing" secondItem="fIp-gr-6C5" secondAttribute="trailing" id="9d8-k9-Kbx"/>
+                <constraint firstAttribute="trailing" secondItem="JZz-Mb-P2o" secondAttribute="trailing" constant="8" id="CIK-aH-vV7"/>
+                <constraint firstItem="JZz-Mb-P2o" firstAttribute="top" secondItem="fIp-gr-6C5" secondAttribute="bottom" id="LXU-Hd-dCi"/>
+                <constraint firstItem="Q6k-RT-pPE" firstAttribute="top" secondItem="rui-ZK-tbX" secondAttribute="top" id="RV0-eB-jRs"/>
+                <constraint firstItem="fIp-gr-6C5" firstAttribute="leading" secondItem="rui-ZK-tbX" secondAttribute="leading" id="TSI-7J-YnB"/>
+                <constraint firstItem="fIp-gr-6C5" firstAttribute="top" secondItem="Q6k-RT-pPE" secondAttribute="bottom" id="jhh-Te-lxS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bottomView" destination="fIp-gr-6C5" id="YUb-fA-aXs"/>
+                <outlet property="confirmBtn" destination="JZz-Mb-P2o" id="xsK-zI-J5R"/>
+                <outlet property="privilegeNumber" destination="2cl-at-YiM" id="jHN-h1-BEN"/>
+                <outlet property="topView" destination="Q6k-RT-pPE" id="ttW-M9-QSN"/>
+            </connections>
+            <point key="canvasLocation" x="361" y="178"/>
+        </view>
+    </objects>
+</document>

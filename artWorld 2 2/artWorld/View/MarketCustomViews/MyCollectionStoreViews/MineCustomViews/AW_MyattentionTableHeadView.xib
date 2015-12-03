@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AW_MyattentionTableHeadView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我关注的人" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dI7-V1-mfi">
+                    <rect key="frame" x="8" y="9" width="76" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="76" id="hfU-8I-jeu"/>
+                        <constraint firstAttribute="height" constant="21" id="nhV-oG-a9q"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x7J-hc-4Pc">
+                    <rect key="frame" x="228" y="6.5" width="84" height="27"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="27" id="8nB-cR-Yt6"/>
+                        <constraint firstAttribute="width" constant="84" id="zet-5e-VB8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="添加关注">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="addAttentionBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="W72-pH-zF1"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="dI7-V1-mfi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="7FZ-RA-bV5"/>
+                <constraint firstAttribute="centerY" secondItem="dI7-V1-mfi" secondAttribute="centerY" constant="0.5" id="MR5-Lo-8gh"/>
+                <constraint firstAttribute="centerY" secondItem="x7J-hc-4Pc" secondAttribute="centerY" id="Qbk-Xz-bvI"/>
+                <constraint firstAttribute="trailing" secondItem="x7J-hc-4Pc" secondAttribute="trailing" constant="8" id="VND-Ha-AI2"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="addAttentionBtn" destination="x7J-hc-4Pc" id="q8d-sD-HgX"/>
+                <outlet property="myAttentionLabel" destination="dI7-V1-mfi" id="SUt-4Y-34J"/>
+            </connections>
+            <point key="canvasLocation" x="277" y="141"/>
+        </view>
+        <view contentMode="scaleToFill" id="kBO-8z-bDg" customClass="AW_MyattentionTableHeadView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TA关注的人" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ar-Q8-Jmf">
+                    <rect key="frame" x="8" y="9" width="78" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="76" id="Ro9-kk-jNu"/>
+                        <constraint firstAttribute="height" constant="21" id="fQN-gY-6yu"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerY" secondItem="5ar-Q8-Jmf" secondAttribute="centerY" constant="0.5" id="AFQ-zd-So7"/>
+                <constraint firstItem="5ar-Q8-Jmf" firstAttribute="leading" secondItem="kBO-8z-bDg" secondAttribute="leading" constant="8" id="Ght-E0-RVc"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="myAttentionLabel" destination="5ar-Q8-Jmf" id="BfX-mi-af0"/>
+            </connections>
+            <point key="canvasLocation" x="277" y="265"/>
+        </view>
+    </objects>
+</document>
